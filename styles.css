@@ -62,7 +62,7 @@ body {
 .card {
     background-color: var(--white);
     padding: 1.5em;
-    max-width: 375px;
+    max-width: 315px;
     border: 1px solid var(--gray-500);
     border-radius: 20px;
     box-shadow: 7px 7px 0px 0px var(--gray-950);
