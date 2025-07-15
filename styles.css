@@ -47,6 +47,7 @@
 
 html {
     font-size: 16px;
+    color: var(--gray-950)
 }
 
 body {
@@ -78,25 +79,28 @@ body {
     margin: 1rem 0;
     border-radius: 5px;
     font-family: 'Figtree-extraBold';
-    color: var(--gray-950);
     font-size: 0.75rem;
 }
 
 .card__publication {
     font-family: 'Figtree-medium';
-    color: var(--gray-950);
     font-size: 0.75rem;
 }
 
 .card__title {
     font-family: 'Figtree-extraBold';
-    color: var(--gray-950);
     font-size: 1.5rem;
     margin: 1rem 0;
+    transition: 0.3s ease;
+}
+
+.card__title:hover {
+    color: var(--yellow);
+    cursor: pointer;
 }
 
 .card__description {
-    font-family: 'Figtree-variable';
+    font-family: 'Figtree-medium';
     color: var(--gray-500);
     line-height: 1.5;
     margin: 1rem 0;
@@ -105,9 +109,8 @@ body {
 .card__author {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 15px;
-    margin-top: 2rem;
+    gap: 10px;
+    margin: 1rem 0;
 }
 
 .card__author-image {
@@ -116,5 +119,4 @@ body {
 
 .card__author-name {
     font-family: 'Figtree-extraBold';
-    color: var(--gray-950);
 }
