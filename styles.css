@@ -45,9 +45,9 @@
   margin: 0;
 }
 
-html {
+/* html {
     font-size: 16px;
-}
+} */
 
 body {
     font-family: 'Figtree', sans-serif;
@@ -62,7 +62,8 @@ body {
 .card {
     background-color: var(--white);
     padding: 1.5em;
-    max-width: 315px;
+    min-width: 300px;
+    max-width: 375px;
     border: 1px solid var(--gray-500);
     border-radius: 20px;
     box-shadow: 7px 7px 0px 0px var(--gray-950);
@@ -92,7 +93,7 @@ body {
     font-weight: 800;
     font-size: 1.5rem;
     margin: 1rem 0;
-    transition: 0.3s ease;
+    /* transition: 0.3s ease; */
 }
 
 .card__title:hover {
@@ -111,7 +112,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 1.75rem;
+    margin-block-start: 2rem;
 }
 
 .card__author-image {
