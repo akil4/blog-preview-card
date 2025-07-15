@@ -1,30 +1,30 @@
 @font-face {
-    font-family: 'Figtree-medium';
-    src: url(./assets/fonts/static/Figtree-Medium.ttf) format('truetype');
+    font-family: 'Figtree';
+    src: url(./assets/fonts/static/Figtree-Medium.ttf) format('truetype-variations');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Figtree-extraBold';
-    src: url(./assets/fonts/static/Figtree-ExtraBold.ttf) format('truetype');
+    font-family: 'Figtree';
+    src: url(./assets/fonts/static/Figtree-ExtraBold.ttf) format('truetype-variations');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Figtree-variable';
-    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf) format('truetype');
+    font-family: 'Figtree';
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf) format('truetype-variations');
     font-weight: 300 900;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Figtree-italicVariable';
-    src: url(./assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format('truetype');
+    font-family: 'Figtree';
+    src: url(./assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format('truetype-variations');
     font-weight: 300 900;
     font-style: italic;
     font-display: swap;
@@ -47,10 +47,11 @@
 
 html {
     font-size: 16px;
-    color: var(--gray-950)
 }
 
 body {
+    font-family: 'Figtree', sans-serif;
+    color: var(--gray-950);
     background-color: var(--yellow);
     min-height: 100vh;
     display: flex;
@@ -62,7 +63,7 @@ body {
     background-color: var(--white);
     padding: 1.5em;
     max-width: 375px;
-    border: 1px solid var(--gray-950);
+    border: 1px solid var(--gray-500);
     border-radius: 20px;
     box-shadow: 7px 7px 0px 0px var(--gray-950);
 }
@@ -78,17 +79,17 @@ body {
     width: fit-content;
     margin: 1rem 0;
     border-radius: 5px;
-    font-family: 'Figtree-extraBold';
+    font-weight: 800;
     font-size: 0.75rem;
 }
 
 .card__publication {
-    font-family: 'Figtree-medium';
     font-size: 0.75rem;
+    font-weight: 500;
 }
 
 .card__title {
-    font-family: 'Figtree-extraBold';
+    font-weight: 800;
     font-size: 1.5rem;
     margin: 1rem 0;
     transition: 0.3s ease;
@@ -100,7 +101,7 @@ body {
 }
 
 .card__description {
-    font-family: 'Figtree-medium';
+    font-weight: 400;
     color: var(--gray-500);
     line-height: 1.5;
     margin: 1rem 0;
@@ -110,7 +111,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 1rem 0;
+    margin-top: 1.75rem;
 }
 
 .card__author-image {
@@ -118,5 +119,5 @@ body {
 }
 
 .card__author-name {
-    font-family: 'Figtree-extraBold';
+    font-weight: 800;
 }
